@@ -1,0 +1,8 @@
+# Copy to `.dev.vars` for local `wrangler dev`. These stay on your machine and
+# are git-ignored. In production use `wrangler secret put <NAME>` instead.
+ANTHROPIC_API_KEY=sk-ant-...
+ELEVENLABS_API_KEY=...
+# Speech-to-text — set whichever matches VoiceTranscriptionProvider in Info.plist:
+OPENAI_API_KEY=sk-...            # provider = openai
+ASSEMBLYAI_API_KEY=...           # provider = assemblyai (needs a card on the account)
+# ELEVENLABS_VOICE_ID is set in wrangler.toml [vars] (non-secret).

@@ -1,0 +1,35 @@
+# Local secrets — never commit real keys
+.dev.vars
+**/.dev.vars
+.env
+.env.*
+!.env.example
+!**/.dev.vars.example
+*.pem
+*.p12
+*.key
+*.mobileprovision
+GoogleService-Info.plist
+AuthKey_*.p8
+
+# Dependencies & local worker state
+node_modules/
+**/.wrangler/
+dist/
+
+# Xcode / macOS
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Release artifacts & local tooling
+releases/
+.claude/
+coding-plans/
